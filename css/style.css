@@ -16,7 +16,7 @@ html {
 .heading-text {
     color: #FFD700;
     text-align: center;
-    font-family: 'Baloo', cursive;
+    font-family: 'Baloo', cursive;font-family: 'Baloo', cursive;
     text-shadow: 5px 5px 2.5px #888888;
 }
 #listbox {
@@ -36,4 +36,18 @@ html {
     font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
     text-shadow: 5px 5px 2.5px #888888;
+}
+#page-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #E63E62;
+}
+.footer-text{
+  color: #FFD700;
+  text-shadow: 5px 5px 2.5px #888888;
+  text-align: center;
+  font-family: 'Baloo', cursive;
 }
