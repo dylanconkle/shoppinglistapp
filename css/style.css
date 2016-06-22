@@ -1,0 +1,39 @@
+html {
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#page-heading {
+    background-color: #E63E62;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+}
+.heading-text {
+    color: #FFD700;
+    text-align: center;
+    font-family: 'Baloo', cursive;
+    text-shadow: 5px 5px 2.5px #888888;
+}
+#listbox {
+    position: absolute;
+    width: 550px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -275px;
+    background-color: #FF5349;
+    box-shadow: 5px 5px 2.5px #888888;
+    border-radius: 15px;
+}
+.listbox-header {
+    color: #FFD700;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 2.5px #888888;
+}
