@@ -16,7 +16,7 @@ html {
 .heading-text {
     color: #FFD700;
     text-align: center;
-    font-family: 'Baloo', cursive;font-family: 'Baloo', cursive;
+    font-family: 'Baloo', cursive;
     text-shadow: 5px 5px 2.5px #888888;
 }
 #listbox {
@@ -38,16 +38,60 @@ html {
     text-shadow: 5px 5px 2.5px #888888;
 }
 #page-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #E63E62;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #E63E62;
 }
-.footer-text{
-  color: #FFD700;
-  text-shadow: 5px 5px 2.5px #888888;
-  text-align: center;
-  font-family: 'Baloo', cursive;
+.footer-text {
+    color: #FFD700;
+    text-shadow: 5px 5px 2.5px #888888;
+    text-align: center;
+    font-family: 'Baloo', cursive;
+}
+label, input {
+    display: block;
+}
+input.text {
+    margin-bottom: 12px;
+    width: 95%;
+    padding: .4em;
+}
+fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+}
+h1 {
+    font-size: 1.2em;
+    margin: .6em 0;
+}
+div#users-contain {
+    width: 350px;
+    margin: 20px 0;
+    margin-left: 160px;
+}
+div#users-contain table {
+    margin: 1em 0;
+    border-collapse: collapse;
+    width: auto;
+    height: auto;
+}
+div#users-contain table td, div#users-contain table th {
+    border: 1px solid #eee;
+    padding: .6em 10px;
+    text-align: left;
+}
+.ui-dialog .ui-state-error {
+    padding: .3em;
+}
+#dialog-form{
+    background-color: pink;
+    border-radius: 15px;
+}
+.validateTips {
+    border: 1px solid transparent;
+    padding: 0.3em;
 }

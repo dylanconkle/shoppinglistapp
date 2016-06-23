@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo|Open+Sans" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Dylan's Shopping List</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -16,7 +19,45 @@
 
     <div id="listbox">
         <h2 class="listbox-header">Shopping list:</h2>
-        <i class="fa fa-plus"></i>
+
+        <div id="dialog-form" title="Create new user">
+            <p class="validateTips">All form fields are required.</p>
+
+            <form>
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+
+                    <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+            </form>
+        </div>
+
+
+        <div id="users-contain" class="ui-widget">
+            <table id="users" class="ui-widget ui-widget-content">
+                <thead>
+                    <tr class="ui-widget-header ">
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apples</td>
+                        <td>$1.25</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button id="create-user">Add Item</button>
     </div>
 
     <footer id="page-footer">
