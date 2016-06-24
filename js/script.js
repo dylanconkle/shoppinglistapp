@@ -57,7 +57,7 @@ $(function() {
             $("#users tbody").append("<tr>" +
                 "<td>" + name.val() + "</td>" +
                 "<td>" + price.val() + "</td>" +
-                "<td>" + quantity.val() + "</td>" +
+                "<td>" + quantity.val() + "<button class=\"removebtn\">Delete</button>" + "</td>" +
                 "</tr>");
             dialog.dialog("close");
         }
@@ -90,3 +90,8 @@ $(function() {
         dialog.dialog("open");
     });
 });
+$(document).ready(function() {
+            $('#shoppinglist').on('click', '.removebtn', function() {
+                $(this).closest('tr').remove();
+            });
+  });
