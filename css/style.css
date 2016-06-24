@@ -104,7 +104,11 @@ div#users-contain table td, div#users-contain table th {
 }
 .ui-button{
     margin-left: auto;
+    border-radius: 15px;
 }
 #create-item{
     margin-left: 240px;
+}
+.removebtn{
+    border-radius: 15px;
 }
