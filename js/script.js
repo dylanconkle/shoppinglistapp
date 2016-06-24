@@ -55,6 +55,7 @@ $(function() {
 
         if (valid) {
             $("#users tbody").append("<tr>" +
+                "<td>" + "<input type=\"checkbox\">" + "</td>" +
                 "<td>" + name.val() + "</td>" +
                 "<td>" + price.val() + "</td>" +
                 "<td>" + quantity.val() + "<button class=\"removebtn\">Delete</button>" + "</td>" +
