@@ -71,13 +71,14 @@ h1 {
 div#users-contain {
     width: 350px;
     margin: 20px 0;
-    margin-left: 160px;
+    margin-left: 120px;
 }
 div#users-contain table {
     margin: 1em 0;
     border-collapse: collapse;
     width: auto;
     height: auto;
+    overflow-y:auto;
 }
 div#users-contain table td, div#users-contain table th {
     border: 1px solid #eee;
@@ -90,7 +91,9 @@ div#users-contain table td, div#users-contain table th {
 }
 #dialog-form{
     background-color: pink;
+    padding-bottom: 15em;
     border-radius: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .validateTips {
     border: 1px solid transparent;
@@ -100,5 +103,8 @@ div#users-contain table td, div#users-contain table th {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 .ui-button{
-    margin-left: 250px;
+    margin-left: auto;
+}
+#create-item{
+    margin-left: 240px;
 }
